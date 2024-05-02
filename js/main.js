@@ -3,9 +3,12 @@ let select = document.querySelector("#select");
 const btn = document.querySelector("#btn");
 let bombs =[];
 let mina = 1;
+let punteggio = 0;
 // ************/AL CLICK DEL BOTTONE SI GENERANO LE GRIGLIE\*****************
 btn.addEventListener("click", function(){
     griglia.innerHTML ="";
+    punteggio = 0;
+    console.log("il tuo punteggio è:",punteggio)
     if (select.value == "easy"){
         for (let i = 1; i <= 100; i++) {
             let casella = quadrato(i)
@@ -19,7 +22,6 @@ btn.addEventListener("click", function(){
         if (mina != bombs.values){
             bombs.push(mina);
             console.log(mina)
-
         }
       }
     }
@@ -57,6 +59,11 @@ btn.addEventListener("click", function(){
                 square.classList.remove("red");
                 if (bombs.includes(contenuto)) {
                     square.classList.add("bomba")
+
+                }
+                else {
+                    punteggio++
+                    console.log("il punteggio è:",punteggio)
                 }
             }
             // else if (square.classList.contains("red", "squareMed")){
