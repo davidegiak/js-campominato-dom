@@ -10,23 +10,27 @@ btn.addEventListener("click", function(){
             griglia.append(casella);
     }
     }
-    else if(select.value == "medium"){
-        for (let i = 1; i <= 81; i++) {
-            let casella = quadrato(i)
-            griglia.append(casella);
-            casella.classList.add("squareMed")
-            casella.classList.remove("square")
-    }
-    }
 
-    else {
-        for (let i = 1; i <= 49; i++) {
-            let casella = quadrato(i)
-            griglia.append(casella);
-            casella.classList.add("squareHard");
-            casella.classList.remove("square");
-    }
-    }
+//*****************************/ PARTE DEL SELECT \*******************
+    // else if(select.value == "medium"){
+    //     for (let i = 1; i <= 81; i++) {
+    //         let casella = quadrato(i)
+    //         griglia.append(casella);
+    //         casella.classList.add("squareMed")
+    //         casella.classList.remove("square")
+    // }
+    // }
+
+    // else {
+    //     for (let i = 1; i <= 49; i++) {
+    //         let casella = quadrato(i)
+    //         griglia.append(casella);
+    //         casella.classList.add("squareHard");
+    //         casella.classList.remove("square");
+    // }
+    // }
+//  *********************************************************************\
+    
     
     function quadrato(contenuto) {
         let square = document.createElement("div");
