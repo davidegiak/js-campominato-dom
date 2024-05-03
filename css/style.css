@@ -46,3 +46,7 @@ body {
 .bomba {
     background-color: crimson;
 }
+
+.noTuch {
+    pointer-events: none;
+}
