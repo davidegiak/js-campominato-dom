@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campominato</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/style.scss">
 </head>
+
 <body>
-    <button id="btn">gioca</button>
-    <select name="select" id="select">
-        <option id="opt1" value="easy">easy</option>
-        <option id="opt2" value="medium">medium</option>
-        <option id="opt3" value="hard">hard</option>
-    </select>
+    <div id="first" class="container mx-auto d-flex justify-content-center align-items-center gap-3">
+        <button id="btn" class="btn btn-outline-light">gioca</button>
+        <select name="select" id="select" class="bg-transparent rounded text-light" >
+            <option id="opt1" value="easy" class="text-dark">easy</option>
+            <option id="opt2" value="medium" class="text-dark">medium</option>
+            <option id="opt3" value="hard" class="text-dark">hard</option>
+        </select>
+    </div>
+
     <main class="container">
+        <div class="row riga">
+
+        </div>
         <!-- <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
@@ -23,8 +33,11 @@
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div> -->
-        
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

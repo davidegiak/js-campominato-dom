@@ -1,5 +1,6 @@
-let griglia = document.querySelector(".container");
+let griglia = document.querySelector(".riga");
 let select = document.querySelector("#select");
+let firstCont = document.querySelector('#first')
 const btn = document.querySelector("#btn");
 let bombs =[];
 let mina = 1;
@@ -18,7 +19,7 @@ btn.addEventListener("click", function(){
         for (let i = 1; i <= 100; i++) {
             let casella = quadrato(i);
             griglia.append(casella);
-            
+            firstCont.classList.add('d-none');
         }
 // ***********CREO LE BOMBE DA APPLICARE SULLE CASELLE AUTOMATICAMENTE AL CLICK DEL BOTTONE
   
